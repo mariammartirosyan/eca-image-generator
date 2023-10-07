@@ -1,0 +1,3 @@
+rootProject.name = 'ms_art'
+include 'cf'
+project(':cf').projectDir = new File('../cf')
