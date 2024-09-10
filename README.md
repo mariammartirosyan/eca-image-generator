@@ -1,8 +1,8 @@
-# ArtMicroservice
+# ECA Image Generating Microservice
 
-ms_art microservice is responsible for generating images.
-The request handling and the calculation of image cells are implemented using the job/worker pattern. 
+The `ms_art` microservice handles the generation of images, communicating with other services via UDP.
 
-The microservice supports generating two types of images: 
-  1. Black and white geometric structures on which Elementary Cellular Automaton (ECA) is applied.
-  2. ECA generated colored images, where the color of every live cell is determined by the states of its neighboring cells.
+It supports the generation of two types of images, with cell calculations performed in parallel:
+
+1. **Black-and-white geometric structures** on which Elementary Cellular Automaton (ECA) is applied.
+2. **Colored ECA-generated images**, where the color of each live cell is determined by the states of its neighboring cells.
